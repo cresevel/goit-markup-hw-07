@@ -896,6 +896,35 @@ footer p {
     ul.section-three-items {
         margin: 72px 28px;
     }
+
+    footer {
+        text-align: center;
+    }
+
+    footer p {
+        width: 320px;
+        margin: 27px 0;
+        padding: 0px 28px;
+    }
+
+    .social-media-title {
+        margin: 0;
+        padding: 0;
+    }
+
+    .socmed-icons-footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+    }
+    .footer-email-field {
+        margin: 25px 0;
+        padding: 0 11px;
+        width: 295px;
+        height: 38px;
+    }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1440px) {
