@@ -845,10 +845,18 @@ footer p {
         fill: #434455;
     }
 
+    .menu-button {
+        margin-left: 51px;
+    }
+
     .container {
         min-width: 320px;
         margin: 0 auto;
     }
+
+.webstudio {
+    margin: 0px 0px 0px 105px;
+}
 
     .section-two {
         display: none;
