@@ -838,7 +838,7 @@ footer p {
     }
 }
 
-@media (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 428px) {
     svg.menu-icon {
         fill: #434455;
     }
@@ -927,34 +927,49 @@ footer p {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
-    .menu-icon {
-        display: none;
+@media screen and (min-width: 428px) and (max-width: 768px) {
+    svg.menu-icon {
+        fill: #434455;
     }
 
     .menu-button {
+        margin-left: 168px;
+    }
+    
+    .navigation {
         display: none;
     }
-}
+    
+    .navigation-contact {
+        display: none;
+    }
+    
+    .container {
+        min-width: 768px;
+        margin: 0 auto;
+    }
+    
+    .webstudio {
+        margin: 0;
+    }
 
-@media screen and (min-width: 468px) and (max-width: 768px) {
     .section-two {
         display: none;
-        }
+    }
     
     h1.banner-text {
         text-align: center;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 188px 292px 48px 292px;
+        padding: 188px 0px 48px 0px;
         margin: 0;
         color: #FFF;
         font-size: 56px;
         font-weight: 700;
         line-height: 60px;
         font-family: 'Roboto';
-        }
+    }
     
     
     .order-button {
@@ -969,41 +984,57 @@ footer p {
         padding: 16px 32px;
         font-size: 16px;
         border-radius: 6px;
-        }
+    }
+    
+    ul.section-one-items {
+        gap: 85px;
+    }
 
     .section-one-icon-bg {
         display: none;
-        }
+    }
 
-        .footer-container {
-            text-align: center;
-        }
+    .customers ul {
+        gap: 11px;
+    }
     
-        .form-footer {
-            text-align: center;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
+    .form-footer {
+        text-align: left;
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 42px;
+    }
+
+    #social-media-title {
+        text-align: left;
+    }
+
     
-        .socmed-icons-footer {
-            justify-content: space-evenly;
-        }
+    .form-footer button {
+        margin-top: 20px;
+    }
+
+    .footer-email-field {
+        height: 40px;
+        width: 264px;
+    }
+
+    .form-footer button {
+        height: 40px;
+        width: 165px;
+    }
     
-        .form-footer button {
-            margin-top: 20px;
-        }
+    .footer p {
+        text-align: left;
+        margin-right: 0;
+    }
     
-        .footer p {
-            margin-right: 0;
-        }
-    
-        ul.section-three-items {
-            margin: 72px auto;
-            display: flex;
-            justify-content: space-evenly;
-            flex-wrap: wrap;
-            padding-bottom: 88px;
-            gap: 24px;
-        }
+    ul.section-three-items {
+        margin: 72px auto;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        padding-bottom: 88px;
+        gap: 24px;
+    }
 }
