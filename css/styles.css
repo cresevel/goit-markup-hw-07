@@ -4,6 +4,7 @@ body {
     color: #2E2F42;
 }
 
+
 *,
 *::before,
 *::after {
@@ -170,6 +171,7 @@ nav.menu {
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+
 /* Main Banner */
 
 
@@ -200,6 +202,9 @@ nav.menu {
 
 
 h1.banner-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 188px 292px 48px 292px;
     margin: 0;
     color: white;
@@ -211,11 +216,14 @@ h1.banner-text {
 
 
 .order-button {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     width: 167px;
     background: #4D5AE5;
     color: #FFF;
     border: 2px solid #4D5AE5;
-    margin: 0px 635px 188px 636px;
+    margin: auto;
     padding: 16px 32px;
     font-size: 16px;
     border-radius: 6px;
@@ -280,8 +288,6 @@ h1.banner-text {
 
 .section-one, .section-two, .section-three, .customers, footer  {
     margin-top: 120px;
-    padding-left: 156px;
-    padding-right: 156px;
     box-sizing: border-box;
 }
 
@@ -404,11 +410,21 @@ h1.banner-text {
 
 ul.section-one-items {
     padding-top: 120px;
-    padding-left: 156px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 8px;
+}
+
+.section-one-icon-bg {
+    padding: 24px 101px;
+    background-color: #F4F4FD;
+    width: 264px;
+    height: 112px;
+}
+
+.section-one-icon-bg {
+    background-color: #F4F4FD;
 }
 
 
@@ -436,16 +452,17 @@ ul.section-two-items {
 }
 
 h2.our-team {
+    text-align: center;
     margin-top: 120px;
     padding: 120px 0px 0px 0px;
 }
 
 ul.section-three-items {
-    margin: 72px 0px 120px 0px;
-    display: inline-flex;
-    padding-bottom: 0px;
-    flex-direction: row;
-    gap: 32px;
+    margin: 72px 155px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 88px;
+    gap: 24px;
 }
 
 li.team-member {
@@ -476,6 +493,7 @@ li.team-member {
 
 .customers ul {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
@@ -658,10 +676,17 @@ ul.row-one, .row-two, .row-three {
 /* Footer */
 
 footer {
-    background-color: #2E2F42;
-    padding-left: 156px;
-    height: 312px;
     display: flex;
+    justify-content: space-evenly;
+    background-color: #2E2F42;
+    padding: 62px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    row-gap: 72px;
 }
 
 .web-logo {
@@ -672,12 +697,13 @@ footer {
     font-weight: 800;
     line-height: 21px;
     letter-spacing: 0.54px;
-    text-transform: uppercase;
-    margin-bottom: 17.5px;
 }
 
 footer p {
+    display: flex;
+    flex-direction: column;
     width: 264px;
+    margin-right: 56px;
     color: #F4F4FD;
     font-family: Roboto;
     font-size: 16px;
@@ -685,11 +711,6 @@ footer p {
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.32px;
-    margin-bottom: 100px;
-}
-
-footer div {
-    padding-top: 101px;
 }
 
 .studio-logo {
@@ -706,7 +727,7 @@ footer div {
 .footer-social-media {
     display: flex;
     flex-direction: column;
-    margin-left: 120px;
+    flex-wrap: nowrap;
     gap: 16px;
 }
 
@@ -733,19 +754,26 @@ footer div {
 }
 
 .form-footer {
-    position: relative;
-    padding: 20px;
+    display: block;
 }
 
 .footer-form-title {
-    margin-top: 99px;
-    margin-bottom: 14px;
+    color: #FFF;
+    /* Body Medium */
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    /* 150% */
+    letter-spacing: 0.32px;
+    margin-bottom: 10px;
 }
 
 .footer-email-field {
-    margin: 0;
+    margin-right: 25px;
     padding: 0 11px;
-    width: 264px;
+    width: 300px;
     height: 47px;
     border-radius: 4px;
     border: 1px solid #FFF;
@@ -769,9 +797,9 @@ footer div {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    position: absolute;
-    top: 153px;
-    left: 325px;
+    /* position: absolute; */
+    /* top: 80px; */
+    /* left: 308px; */
     border-radius: 4px;
     color: #FFF;
     text-align: center;
@@ -791,8 +819,115 @@ footer div {
 }
 
 .icon-icon-send {
-    fill: #FFFFFF;
+    fill: #FFF;
     margin: 5px;
-    width: 24px;
-    height: 24px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* Media Query */
+
+/* Screen 1440px */
+
+@media screen and (min-width: 1440px) {
+    .menu-button {
+        position: absolute;
+        visibility: hidden;
+    }
+}
+
+@media (max-width: 360px) {
+    svg.menu-icon {
+        fill: #434455;
+    }
+
+    .container {
+        min-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1440px) {
+    .menu-icon {
+        display: none;
+    }
+
+    .menu-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 468px) and (max-width: 768px) {
+    .section-two {
+        display: none;
+        }
+    
+    h1.banner-text {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 188px 292px 48px 292px;
+        margin: 0;
+        color: #FFF;
+        font-size: 56px;
+        font-weight: 700;
+        line-height: 60px;
+        font-family: 'Roboto';
+        }
+    
+    
+    .order-button {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 167px;
+        background: #4D5AE5;
+        color: #FFF;
+        border: 2px solid #4D5AE5;
+        margin: auto;
+        padding: 16px 32px;
+        font-size: 16px;
+        border-radius: 6px;
+        }
+
+    .section-one-icon-bg {
+        display: none;
+        }
+
+        .footer-container {
+            text-align: center;
+        }
+    
+        .form-footer {
+            text-align: center;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+    
+        .socmed-icons-footer {
+            justify-content: space-evenly;
+        }
+    
+        .form-footer button {
+            margin-top: 20px;
+        }
+    
+        .footer p {
+            margin-right: 0;
+        }
+    
+        ul.section-three-items {
+            margin: 72px auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            padding-bottom: 88px;
+            gap: 24px;
+        }
 }
