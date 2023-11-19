@@ -68,7 +68,7 @@ a {
 /* Navigation Section */
 
 nav.menu {
-    margin: 24px 0px 24px 0px;
+    margin: 24px 0px;
 }
 
 .navigation {
@@ -95,7 +95,7 @@ nav.menu {
 }
 
 .navigation-contact {
-    width: 483px;
+    width: 690px;
     margin: 0;
     padding:0%;
     position: absolute;
@@ -848,6 +848,10 @@ footer p {
     .container {
         min-width: 320px;
         margin: 0 auto;
+    }
+
+    .section-two {
+        display: none;
     }
 }
 
