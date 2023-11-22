@@ -926,21 +926,7 @@ ul.hamburger-social-list.list {
 
 /* Media Query */
 
-@media screen and (min-width: 1440px) {
-    .menu-icon {
-        position: absolute;
-        visibility: hidden;
-    }
-
-    .mobile-menu-container {
-        display: none;
-    }
-
-    button.menu-toggle.js-open-menu {
-        display: none;
-    }
-}
-
+/* 320px Width */
 @media (min-width: 320px) and (max-width: 428px) {
 
     .navigation {
@@ -1046,16 +1032,25 @@ ul.hamburger-social-list.list {
     }
 }
 
-@media screen and (min-width: 428px) and (max-width: 768px) {
+/* Mobile */
+@media screen and (min-width: 429px) and (max-width: 768px) {
     .container {
         min-width: 768px;
         margin: 0 auto;
     }
 
-    .menu-icon {
+    .menu-toggle {
         position: absolute;
+        top: 6px;
+        right: 25px;
     }
-    
+
+   .menu-icon {
+       position: absolute;
+       top: 22px;
+       right: 22px;
+   }
+
     .mobile-menu-container {
         position: absolute;
     }
@@ -1160,6 +1155,8 @@ ul.hamburger-social-list.list {
     }
 }
 
+/* Tablet */
+
 @media screen and (min-width: 769px) and (max-width: 1199px) {
     .container {
         min-width: 769px;
@@ -1191,3 +1188,18 @@ ul.hamburger-social-list.list {
     .logo {
         font-size: 16px;
     }
+
+@media screen and (min-width: 1440px) {
+    .menu-icon {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    .mobile-menu-container {
+        display: none;
+    }
+
+    button.menu-toggle.js-open-menu {
+        display: none;
+    }
+}
