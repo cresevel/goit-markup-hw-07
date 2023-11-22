@@ -21,9 +21,6 @@
     <!-- Logo -->
     <div class="webstudio">
     <a href="index.html" class="header-link"><span class="logo">WEB</span>STUDIO</a>
-    <a href="/" class="menu-button"><svg class="menu-icon" width="32px" height="22px">
-        <use xlink:href="./images/icons.svg#icon-menu-icon"></use>
-    </svg></a>
     </div>
     <ul class="navigation">
     <li class="item"><a href="index.html" class="menu-studio active">Studio</a>
@@ -43,6 +40,74 @@
         <div class="menu hover"></div>
     </li>
     </ul>
+
+<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+<svg class="menu-icon" width="32px" height="32px">
+        <use href="./images/icons.svg#icon-menu-icon"></use>
+    </svg>
+</button>
+<div class="mobile-menu-container js-menu-container is-open" id="mobile-menu">
+<button class="menu-toggle hamburger-close-button js-close-menu">
+<svg class="menu-icon" width="32px" height="32px">
+    <use href="./images/icons.svg#icon-close-menu"></use>
+</svg>
+</button>
+<!--Menu Box-->
+<ul class="hamburger-menu-list list">
+    <li class="hamburger-menu-item">
+        <a href=".index.html" class="hamburger-menu-link link menu-active">Studio</a>
+    </li>
+    <li class="hamburger-menu-item">
+        <a href="#" class="hamburger-menu-link link">Portfolio</a>
+    </li>
+    <li class="hamburger-menu-item">
+        <a href="#" class="hamburger-menu-link link">Contacts</a>
+    </li>
+</ul>
+<div class="hamburger-wrapper">
+    <address class="hamburger-address">
+        <ul class="hamburger-address-list">
+            <li class="hamburger-address-phone">
+                <a href="tel:+110001111111" class="hamburger-address-link highlight link">+11 (000) 111-11-11</a> 
+            </li>
+            <li class="hamburger-address-email">
+                <a href="mailto:info@devstudio.com" class="hamburger-address-link highlight link">info@devstudio.com</a>
+            </li>
+        </ul>
+    </address>
+    <ul class="hamburger-social-list list">
+        <li class="hamburger-social-item">
+            <a href="https://www.instagram.com/">
+                <svg class="icon icon-instagram">
+                    <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="hamburger-social-item">
+            <a href="https://www.twitter.com/">
+                <svg class="icon icon-twitter">
+                    <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="hamburger-social-item">
+            <a href="https://www.facebook.com/">
+                <svg class="icon icon-facebook">
+                    <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="hamburger-social-item">
+            <a href="https://www.linkedin.com/">
+                <svg class="icon icon-linkedin2">
+                    <use xlink:href="./images/icons.svg#icon-linkedin2"></use>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+</div>
+
 </header>
 <main class="container-main">
 <!--Main Banner-->
