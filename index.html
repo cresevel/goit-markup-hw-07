@@ -40,74 +40,11 @@
         <div class="menu hover"></div>
     </li>
     </ul>
-
-<button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-<svg class="menu-icon" width="32px" height="32px">
-        <use href="./images/icons.svg#icon-menu-icon"></use>
-    </svg>
-</button>
-<div class="mobile-menu-container js-menu-container is-open" id="mobile-menu">
-<button class="menu-toggle hamburger-close-button js-close-menu">
-<svg class="menu-icon" width="32px" height="32px">
-    <use href="./images/icons.svg#icon-close-menu"></use>
-</svg>
-</button>
-<!--Menu Box-->
-<ul class="hamburger-menu-list list">
-    <li class="hamburger-menu-item">
-        <a href=".index.html" class="hamburger-menu-link link menu-active">Studio</a>
-    </li>
-    <li class="hamburger-menu-item">
-        <a href="#" class="hamburger-menu-link link">Portfolio</a>
-    </li>
-    <li class="hamburger-menu-item">
-        <a href="#" class="hamburger-menu-link link">Contacts</a>
-    </li>
-</ul>
-<div class="hamburger-wrapper">
-    <address class="hamburger-address">
-        <ul class="hamburger-address-list">
-            <li class="hamburger-address-phone">
-                <a href="tel:+110001111111" class="hamburger-address-link highlight link">+11 (000) 111-11-11</a> 
-            </li>
-            <li class="hamburger-address-email">
-                <a href="mailto:info@devstudio.com" class="hamburger-address-link highlight link">info@devstudio.com</a>
-            </li>
-        </ul>
-    </address>
-    <ul class="hamburger-social-list list">
-        <li class="hamburger-social-item">
-            <a href="https://www.instagram.com/">
-                <svg class="icon icon-instagram">
-                    <use xlink:href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="hamburger-social-item">
-            <a href="https://www.twitter.com/">
-                <svg class="icon icon-twitter">
-                    <use xlink:href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="hamburger-social-item">
-            <a href="https://www.facebook.com/">
-                <svg class="icon icon-facebook">
-                    <use xlink:href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-            </a>
-        </li>
-        <li class="hamburger-social-item">
-            <a href="https://www.linkedin.com/">
-                <svg class="icon icon-linkedin2">
-                    <use xlink:href="./images/icons.svg#icon-linkedin2"></use>
-                </svg>
-            </a>
-        </li>
-    </ul>
-</div>
-</div>
-
+    <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg class="mobile-menu-icon" width="32px" height="22px">
+            <use href=".images/icons.svg#icon-menu-icon"></use>
+        </svg>
+    </button>
 </header>
 <main class="container-main">
 <!--Main Banner-->
@@ -164,28 +101,28 @@
     <img src="./images/Strategy-icon.svg" class="strategy-icon svg" alt="strategy">
     </div>
     <h3>Strategy</h3>
-    <p>Our goal is to identify the business<br>problem to walk away with the<br>perfect and creative solution.</p>
+    <p class="p-section-one">Our goal is to identify the business<br>problem to walk away with the<br>perfect and creative solution.</p>
     </li>        
     <li class="punctuality">
     <div class="section-one-icon-bg">
     <img src="./images/Punctuality-icon.svg" class="punctuality-icon svg" alt="punctuality">
     </div>
     <h3>Punctuality</h3>
-    <p>Bring the key message to the brand's<br>audience for the best price within the<br>shortest possible time.</p>
+    <p class="p-section-one">Bring the key message to the brand's<br>audience for the best price within the<br>shortest possible time.</p>
     </li>    
     <li class="diligence">
     <div class="section-one-icon-bg">
     <img src="./images/Diligence-icon.svg" class="diligence-icon svg" alt="diligence">
     </div>
     <h3>Diligence</h3>
-    <p>Research and confirm brands that<br>present the strongest digital growth<br>opportunities and minimize risk.</p>
+    <p class="p-section-one">Research and confirm brands that<br>present the strongest digital growth<br>opportunities and minimize risk.</p>
     </li>   
     <li class="technologies">
     <div class="section-one-icon-bg">
     <img src="./images/Technologies-icon.svg" class="technologies-icon svg" alt="technologies">
     </div>
     <h3>Technologies</h3>
-    <p>Design practice focused on digital<br>experiences. We bring forth a deep<br>passion for problem-solving.</p>
+    <p class="p-section-one">Design practice focused on digital<br>experiences. We bring forth a deep<br>passion for problem-solving.</p>
     </li>
     </ul>
 </section>
@@ -367,10 +304,69 @@
 </div>
 </div>
 </footer>
+<!--Mobile-->
+<div class="menu-container js-menu-container" id="mobile=menu">
+    <button type="button" class="menu-toggle js-close-menu mobile-close-btn">&times;</button>
+
+    <!--Menu Box-->
+    <ul class="hamburger-menu-list list">
+        <li class="hamburger-menu-item">
+            <a href=".index.html" class="hamburger-menu-link link menu-active">Studio</a>
+        </li>
+        <li class="hamburger-menu-item">
+            <a href="#" class="hamburger-menu-link link">Portfolio</a>
+        </li>
+        <li class="hamburger-menu-item">
+            <a href="#" class="hamburger-menu-link link">Contacts</a>
+        </li>
+    </ul>
+    <div class="hamburger-wrapper">
+        <address class="hamburger-address">
+            <ul class="hamburger-address-list">
+                <li class="hamburger-address-phone">
+                    <a href="tel:+110001111111" class="hamburger-address-link highlight link">+11 (000) 111-11-11</a>
+                </li>
+                <li class="hamburger-address-email">
+                    <a href="mailto:info@devstudio.com" class="hamburger-address-link highlight link">info@devstudio.com</a>
+                </li>
+            </ul>
+        </address>
+        <ul class="hamburger-social-list list">
+            <li class="hamburger-social-item">
+                <a href="https://www.instagram.com/">
+                    <svg class="icon icon-instagram">
+                        <use xlink:href="./images/icons.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="hamburger-social-item">
+                <a href="https://www.twitter.com/">
+                    <svg class="icon icon-twitter">
+                        <use xlink:href="./images/icons.svg#icon-twitter"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="hamburger-social-item">
+                <a href="https://www.facebook.com/">
+                    <svg class="icon icon-facebook">
+                        <use xlink:href="./images/icons.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+            </li>
+            <li class="hamburger-social-item">
+                <a href="https://www.linkedin.com/">
+                    <svg class="icon icon-linkedin2">
+                        <use xlink:href="./images/icons.svg#icon-linkedin2"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </div>
+    </div>
+
+
+</div>
 <script src="./js/modal.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-<script defer src="js/mobile-menu.js"></script>
+<script src="js/mobile-menu.js"></script>
 </body>
 </html>
